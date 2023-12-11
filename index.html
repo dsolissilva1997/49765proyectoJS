@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Simulador de Reserva de Asientos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="js/funciones.js"></script>
+    <style>
+        body {
+            background: url('img/fondo-avion.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .header {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            color: #333;
+        }
+
+        .header p {
+            color: #555;
+        }
+    </style>
+</head>
+<body class="container mt-5">
+    <div class="header">
+        <h1 class="mb-4">Asientos Avión - Simulador de Reserva</h1>
+        <p>Consiste en un avión con 10 asientos en el cual, mediante un array, se recorre la disponibilidad y se almacena el nombre del pasajero. El estado de los asientos y el carrito se actualiza correctamente. Se utilizan funciones, if y else para comprobaciones y métodos para el array.</p>
+        <p>En este último proyecto de entrega, se utiliza Fetch con promesas, se añaden promesas a otras funciones de js y se añade un botón para ver el carrito en el HTML</p>
+        <p>Daniel Solis - 49765 - Proyecto Final</p>
+    </div>
+
+    <div class="mb-3">
+        <label for="busquedaCategoria" class="form-label">Buscar por Categoría:</label>
+        <div class="input-group">
+            <input type="text" class="form-control" id="busquedaCategoria">
+            <button class="btn btn-primary" onclick="buscarYMostrarAsientosPorCategoria()">Buscar</button>
+        </div>
+    </div>
+
+    <div class="btn-group" role="group" aria-label="Botones de acción">
+        <button class="btn btn-success" onclick="calcularCarrito()">Calcular Carrito</button>
+        <button class="btn btn-danger" onclick="limpiarCarrito()">Limpiar Carrito</button>
+        <button class="btn btn-success" onclick="mostrarCarritoEnContenedor(carrito)">Ver Carrito</button>
+        <button class="btn btn-outline-danger" onclick="mostrarAsientosEnContenedor(asientos)">Mostrar asientos del avión</button>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 g-4 mt-3" id="asientos-container"></div>
+</body>
+</html>

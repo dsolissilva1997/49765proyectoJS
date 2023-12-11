@@ -1,0 +1,72 @@
+    [
+        {
+        "id": 1,
+        "nombre": "",
+        "precio": 1000,
+        "categoria": "ventana",
+        "estado": "disponible"
+        },
+        {
+        "id": 2,
+        "nombre": "",
+        "precio": 800,
+        "categoria": "pasillo",
+        "estado": "disponible"
+        },
+        {
+        "id": 3,
+        "nombre": "",
+        "precio": 200,
+        "categoria": "ventana",
+        "estado": "disponible"
+        },
+        {
+        "id": 4,
+        "nombre": "",
+        "precio": 50,
+        "categoria": "pasillo",
+        "estado": "disponible"
+        },
+        {
+        "id": 5,
+        "nombre": "",
+        "precio": 80,
+        "categoria": "ventana",
+        "estado": "disponible"
+        },
+        {
+        "id": 6,
+        "nombre": "",
+        "precio": 60,
+        "categoria": "pasillo posterior",
+        "estado": "disponible"
+        },
+        {
+        "id": 7,
+        "nombre": "",
+        "precio": 600,
+        "categoria": "ventana posterior",
+        "estado": "disponible"
+        },
+        {
+        "id": 8,
+        "nombre": "",
+        "precio": 400,
+        "categoria": "pasillo posterior",
+        "estado": "disponible"
+        },
+        {
+        "id": 9,
+        "nombre": "",
+        "precio": 900,
+        "categoria": "ventana posterior",
+        "estado": "disponible"
+        },
+        {
+        "id": 10,
+        "nombre": "",
+        "precio": 300,
+        "categoria": "pasillo posterior",
+        "estado": "disponible"
+        }
+    ]
