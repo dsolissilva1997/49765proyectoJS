@@ -82,7 +82,7 @@ function registrarAsiento(id) {
 
 function mostrarCarritoEnContenedor(carrito) {
     const asientosContainer = document.getElementById('asientos-container');
-    
+
     // Si el carrito esta vacio, muestra un mensaje de advertencia y muestra array de asientos nuevamente en el html
     if (carrito.length === 0) {
         mostrarAlertaCarritoVacio();
@@ -98,13 +98,28 @@ function mostrarCarritoEnContenedor(carrito) {
                     <div class="card-body">
                         <h5 class="card-title">Asiento ${asiento.id}</h5>
                         <p class="card-text">Precio: $${asiento.precio}</p>
-                        <p class="card-text">Categoria: ${asiento.categoria}</p>
+                        <p class="card-text">Categoría: ${asiento.categoria}</p>
                         <p class="card-text">Nombre del pasajero: ${asiento.nombre}</p>
                     </div>
                 </div>
             `;
             asientosContainer.appendChild(card);
         });
+
+        // mostrar el boton al final de la lista luego de imprimirlos 
+        const mostrarAsientosButton = document.createElement('button');
+        mostrarAsientosButton.className = 'btn btn-outline-danger';
+        mostrarAsientosButton.textContent = 'Mostrar asientos del avión';
+        mostrarAsientosButton.onclick = function () {
+            mostrarAsientosEnContenedor(asientos);
+            
+        };
+
+        const buttonContainer = document.createElement('div');
+        buttonContainer.className = 'col';
+        buttonContainer.appendChild(mostrarAsientosButton);
+
+        asientosContainer.appendChild(buttonContainer);
     }
 }
 
